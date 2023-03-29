@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 99%;
+    margin: auto;
+}
+
+
+#cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+  column-gap: 10px;
+
+}
+#cont > div{
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+}
+/* #cont > div > img {
+    width: 100%;
+    
+}
+#cont > div> img:hover {
+    transform: scale(1.1);
+} */
