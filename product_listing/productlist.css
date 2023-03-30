@@ -4,6 +4,10 @@ body{
     width: 99%;
     margin: auto;
 }
+#main{
+    display: flex;
+    border: 2px solid red;
+}
 
 
 #cont{
@@ -14,16 +18,28 @@ body{
 
 }
 #cont > div{
-    width: 100%;
+    width: 90%;
     justify-content: center;
     padding: 10px;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
 }
-/* #cont > div > img {
+#cont > div > img {
     width: 100%;
     
 }
 #cont > div> img:hover {
     transform: scale(1.1);
-} */
+}
+
+#fImage{
+    margin: auto;
+    display: block;
+    background-color: blanchedalmond;
+}
+#fImage>img{
+    
+    width: 20%;
+    height: 400px;
+    /* box-sizing: border-box; */
+}
