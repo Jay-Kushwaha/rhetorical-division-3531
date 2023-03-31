@@ -27,7 +27,7 @@ function reportStatus() {
 
     // Create an HTML table using response from server.
     let data = JSON.parse(this.responseText);
-
+   
 
     localStorage.setItem("nil", JSON.stringify(data))
 console.log(data)
@@ -40,6 +40,10 @@ console.log(data)
     show(data1)
   }
 }
+
+let fildata = document.getElementById("filter")
+
+let pricef = document.getElementById("price-range")
 
 data1 = JSON.parse(localStorage.getItem("nil"))||[];
 let cont = document.getElementById("cont");
@@ -55,7 +59,7 @@ function show(data){
   let sym = document.createElement("span");
   let price = document.createElement("span");
   let des = document.createElement("p");
-
+   let col = document.createElement("p")
   img.src = el["tile-image src"]
   img.alt = "error"
   rating.innerText = el["sr-only"]
@@ -63,14 +67,16 @@ function show(data){
   sym.textContent = el["price-curreny-symbol"];
   price.innerText = el["price-currency-text"];
   des.innerText = el["link"]
-
-  card.append(img,rating,tag,sym,price,des);
+col.innerText =el["sr-only 5"]
+  card.append(img,rating,tag,sym,price,des,col);
 
   cont.append(card)
     })
+
+    document.getElementById("total").innerHTML = data1.length;
 }
 
-show(data1)
+// show(data1)
 
 
 
@@ -172,7 +178,66 @@ function sortDes(){
   show(sortedout)
 }
 
+fildata.addEventListener("change", filfun)
 
+function filfun(){
+  let filtered = data1.filter(function(ele){
+    if(fildata.value==""||fildata.value=="colour"){
+      return true;
+    }
+    if(fildata.value==ele["sr-only 5"]){
+      return true;
+    }
+
+  })
+  show(filtered)
+  document.getElementById("total").innerHTML = filtered.length;
+
+}
+
+
+pricef.addEventListener("change", (event) => {
+  const priceRange = JSON.parse(event.target.value);
+  const filteredItems = filterItemsByPriceRange(priceRange);
+  console.log(filteredItems);
+});
+
+
+
+// pricef.addEventListener("change", filprice)
+
+// function filprice(priceRange){
+//   let filteredpri = data1.filter(function(ele){
+//     if(pricef.value==""||pricef.value=="price"){
+//       return true;
+//     }
+//     if(ele["price-currency-text"] >=priceRange.min && ele["price-currency-text"] <= priceRange.max){
+//       return true
+//       console.log(ele["price-currency-text"])
+//     }
+
+//   })
+
+//   console.log(filteredpri);
+//   show(filteredpri)
+//   document.getElementById("total").innerHTML = filteredpri.length;
+
+// }
+
+function filterItemsByPriceRange(priceRange) {
+  return data1.filter((item) => {
+    return item["price-currency-text"] >= priceRange.min && item["price-currency-text"]<= priceRange.max;
+  });
+}
+
+// const pricef = document.getElementById("price-range");
+
+pricef.addEventListener("change", (event) => {
+  const priceRange = JSON.parse(event.target.value);
+  const filteredItems = filterItemsByPriceRange(priceRange);
+  show(filteredItems);
+  document.getElementById("total").innerHTML = filteredItems.length;
+});
 
 function slideshow(slide){
 
