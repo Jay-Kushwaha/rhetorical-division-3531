@@ -35,16 +35,33 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 
     //perform the authentication login
-
+let users = JSON.parse(localStorage.getItem("users"))||[];
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
+        let name = document.getElementById("loginname").value;
+        let pass = document.getElementById("loginpass").value;
+        users.map(el=>{
+            if((el.name==name||el.email==name)&&el.password==pass){
+                localStorage.setItem("loggedin",JSON.stringify(el.name))
+                window.location.href=`index.html`
+            }
+        })
         
-        //perform fetch
-
         setFormMessage(loginForm, "error", "Invalid username/password combination");
 
     });
+createAccountForm.addEventListener("submit", e=>{
+    e.preventDefault();
 
+    let user={
+        name:document.getElementById("signupUsername").value,
+        email:document.getElementById("createmail").value,
+        password:document.getElementById("createpass").value
+    }
+users.push(user)
+    localStorage.setItem("users",JSON.stringify(users))
+
+})
 
     document.querySelectorAll(".form_input").forEach(inputElement =>{
         inputElement.addEventListener("blur", e=> {

@@ -12,8 +12,8 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background: var(#cccccc);
-    background-size: cover;
+    background: linear-gradient(90deg, 	#E8E8E8 60%, #fffefc 40.1%)
+    
 
 }
 
