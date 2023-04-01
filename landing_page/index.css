@@ -4,6 +4,11 @@
     font-family: Montserrat;
 }
 
+/* .main-container{
+    position: sticky;
+    top: 0;
+} */
+
 .main-container>div{
     text-align: center;
     padding: 10px 0px;
@@ -33,6 +38,7 @@
 .controller{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 15px 20px;
+    background-color: white;
 }
 
 .finder{
@@ -420,4 +426,203 @@
 
 .box-2>div>div:hover{
     background-color: #9c1064;
+}
+
+.box-3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+    left: 560px;
+    top: 3300px;
+}
+
+.box-3>div{
+    text-align: center;
+}
+
+.box-3>div :nth-child(1){
+    font-size: 25px;
+}
+
+.box-3>div :nth-child(2){
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-3>div :nth-child(4){
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-3>div>div{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.box-3{
+    color: #3a2a7c;
+}
+
+.box-4{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+    left: 260px;
+    top: 3930px;
+}
+
+.box-4>div{
+    text-align: center;
+}
+
+.box-4>div :nth-child(1){
+    font-size: 25px;
+}
+
+.box-4>div :nth-child(2){
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-4>div :nth-child(4){
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-4>div>div{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.box-4{
+    color: #3a2a7c;
+}
+
+.box-5{
+    display: flex;
+    justify-content: center;
+}
+
+.box-5>div{
+    display: flex;
+    margin-top: 20px;
+}
+
+.box-5>div>div>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.box-5>div>div{
+    background-color: #e00087;
+    padding: 20px 40px;
+    margin: 0px 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-5>div>div:hover{
+    background-color: #9c1064;
+}
+
+.box-5>div :nth-child(2){
+    margin-right: 250px;
+}
+
+.box-5{
+    position: absolute;
+    top: 4660px;
+    left: 165px;
+}
+
+.box-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3a2a7c;
+    margin: 20px 0px;
+}
+
+.box-6>h1{
+    font-size: 55px;
+    font-family: none;
+}
+
+/* .container-1{
+    display: flex;
+    justify-content: center;
+} */
+
+.container-1>div{
+    display: flex;
+    justify-content: center;
+}
+
+.container-1>div>div{
+    margin: 0px 20px;
+}
+
+.box-7{
+    background-color: #e0dee9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 385px;
+}
+
+.box-7>h1{
+    background-color: #3a2a7c;
+    color: white;
+    font-size: 25px;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box-7>div{
+    text-align: center;
+}
+
+.box-7>div :nth-child(1){
+    font-size: 25px;
+    color: #3a2a7c;
+}
+
+.box-7>div :nth-child(2){
+    font-size: 100px;
+    font-family: none;
+    color: #3a2a7c;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.box-7>div :nth-child(3){
+    font-size: 60px;
+    font-family: none;
+    color: #3a2a7c;
+    font-weight: lighter;
+}
+
+.box-7>div :nth-child(4){
+    font-size: 20px;
+    color: #3a2a7c;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.box-7>a{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #3a2a7c;
+}
+
+.container-1>div :nth-child(2)>h1{
+    padding: 10px 65px;
 }
