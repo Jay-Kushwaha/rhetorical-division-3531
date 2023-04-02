@@ -43,7 +43,7 @@ let users = JSON.parse(localStorage.getItem("users"))||[];
         users.map(el=>{
             if((el.name==name||el.email==name)&&el.password==pass){
                 localStorage.setItem("loggedin",JSON.stringify(el.name))
-                window.location.href=`index.html`
+                window.location.href=`/landing_page/index.html`
             }
         })
         
