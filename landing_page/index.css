@@ -403,143 +403,6 @@
     background-color: #9c1064;
 }
 
-.box-2{
-    position: absolute;
-    left: 560px;
-    top: 3600px;
-}
-
-.box-2>div>div>a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.box-2>div>div{
-    background-color: #e00087;
-    padding: 15px 60px;
-    margin: 10px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-}
-
-.box-2>div>div:hover{
-    background-color: #9c1064;
-}
-
-.box-3{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    position: absolute;
-    left: 560px;
-    top: 3300px;
-}
-
-.box-3>div{
-    text-align: center;
-}
-
-.box-3>div :nth-child(1){
-    font-size: 25px;
-}
-
-.box-3>div :nth-child(2){
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.box-3>div :nth-child(4){
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.box-3>div>div{
-    font-size: 80px;
-    font-weight: bold;
-}
-
-.box-3{
-    color: #3a2a7c;
-}
-
-.box-4{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    position: absolute;
-    left: 260px;
-    top: 3930px;
-}
-
-.box-4>div{
-    text-align: center;
-}
-
-.box-4>div :nth-child(1){
-    font-size: 25px;
-}
-
-.box-4>div :nth-child(2){
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.box-4>div :nth-child(4){
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.box-4>div>div{
-    font-size: 80px;
-    font-weight: bold;
-}
-
-.box-4{
-    color: #3a2a7c;
-}
-
-.box-5{
-    display: flex;
-    justify-content: center;
-}
-
-.box-5>div{
-    display: flex;
-    margin-top: 20px;
-}
-
-.box-5>div>div>a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
-
-.box-5>div>div{
-    background-color: #e00087;
-    padding: 20px 40px;
-    margin: 0px 20px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box-5>div>div:hover{
-    background-color: #9c1064;
-}
-
-.box-5>div :nth-child(2){
-    margin-right: 250px;
-}
-
-.box-5{
-    position: absolute;
-    top: 4660px;
-    left: 165px;
-}
-
 .box-6{
     display: flex;
     flex-direction: column;
@@ -552,11 +415,6 @@
     font-size: 55px;
     font-family: none;
 }
-
-/* .container-1{
-    display: flex;
-    justify-content: center;
-} */
 
 .container-1>div{
     display: flex;
@@ -625,4 +483,272 @@
 
 .container-1>div :nth-child(2)>h1{
     padding: 10px 65px;
+}
+
+@media (max-width: 1280px) {
+    .offers-option>div>div{
+        padding: 10px 75px;
+    }
+
+    .box-1>div>div{
+        padding: 20px 30px;
+        margin: 0px 10px;
+        width: 150px;
+    }
+
+    .box-6>h1{
+        font-size: 45px;
+        font-family: none;
+    }
+
+    .categories{
+        display: none;
+    }
+}
+
+@media (max-width: 1059px) {
+    .offers-option>div>div{
+        padding: 10px 55px;
+    }
+
+    .box-1>div>div{
+        padding: 15px 20px;
+        margin: 0px 10px;
+        width: 150px;
+    }
+
+    .box-6>h1{
+        font-size: 35px;
+        font-family: none;
+    }
+
+    .categories{
+        display: none;
+    }
+
+    .container-1>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-7{
+        margin: 20px;
+    }
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .search-bar>input{
+        width: 550px;
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1059px) {
+    .search-bar>input{
+        width: 450px;
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .brands>ul{
+        display: none;
+    }
+}
+
+@media (max-width: 869px) {
+    .offers-option>div>div{
+        padding: 10px 35px;
+    }
+
+    .box-1>div>div{
+        padding: 20px 30px;
+        margin: 0px 10px;
+        width: 150px;
+    }
+
+    .box-6>h1{
+        font-size: 25px;
+        font-family: none;
+    }
+
+    .categories{
+        display: none;
+    }
+
+    .cont>div>a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 846px) {
+    .search-bar>input{
+        width: 350px;
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .box-1>div>div{
+        padding: 15px 10px;
+        margin: 0px 5px;
+        width: 150px;
+    }
+    
+    .box-1>div>div>a{
+        font-size: 10px;
+    }
+
+    .offers-option{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .box-1>div>div{
+        padding: 5px 5px;
+        margin: 0px 5px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 741px) {
+    .section-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search-bar>input{
+        width: 250px;
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .pages>ul>li{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 685px) {
+    .brand-imgs>div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .box-1>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .cont{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 535px) {
+    .cards{
+        width: 350px;
+    }
+
+    .pages>ul>li>img{
+        width: 40px;
+    }
+
+    .pages>ul>li{
+        margin-top: 10px;
+    }
+
+    .search-bar>input{
+        width: 250px;
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .box-6>h1{
+        font-size: 15px;
+        font-family: none;
+    }
+
+    .box-6>h3{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 465px) {
+    .mini-section>div>i{
+        font-size: 25px;
+    }
+
+    .mini-section>div>h3{
+        font-size: 12px;
+    }
+
+    .mini-section>div>a{
+        font-size: 10px;
+    }
+
+    .brand-imgs>div>div>img {
+        width: 60px;
+        display: block;
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: 436px){
+    .pages>ul>li>img{
+        width: 35px;
+    }
+
+    .offers-option>div>div{
+        padding: 10px 20px;
+    }
+
+    .cards{
+        width: 250px;
+    }
+
+    .cards>div>div>img{
+        width: 100px;
+    }
+
+    .cards>div :nth-child(2)>h4{
+        font-size: 15px;
+    }
+
+    .cards>div :nth-child(2)>p{
+        font-size: 10px;
+    }
+
+    .search-bar>input{
+        width: 200px;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    .head>p{
+        font-size: 10px;
+    }
+
+    .head>a{
+        font-size: 10px;
+    }
 }
