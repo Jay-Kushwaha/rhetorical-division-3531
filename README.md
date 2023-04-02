@@ -4,7 +4,7 @@
 
   <h2 align="center">Estelle - Fashion eCommerce Website</h2>
 
-This is a clone of an e-commerce website built using HTML, CSS, and JavaScript.<br/> The website includes the following pages: Home/Landing page, Products, Cart, and Checkout.
+This is a clone of an e-commerce website built using HTML, CSS, and JavaScript.<br/> The website includes the following pages: Home/Landing page, Products, Cart,login and Checkout.
 
 
 
