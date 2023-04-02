@@ -1,4 +1,18 @@
-
+let loggedin = JSON.parse(localStorage.getItem("loggedin"))||"";
+if(loggedin.length!=0){
+    document.getElementById("changeimg").src='/landing_page/Utiles/logout.jpg'
+    document.getElementById("changeimg").addEventListener("click", function(){
+        localStorage.removeItem('loggedin');
+        alert("Your are logged out")
+       window.location.reload();
+    })
+}
+else{
+    document.getElementById("changeimg").addEventListener("click", function(){
+       
+        window.location.href='/login_authentication/login.html'
+    })
+}
 
 // async function fetchApi(){
 //     try{
@@ -78,9 +92,23 @@ col.innerText =el["sr-only 5"]
 btn.innerText = "Add To Bag"
 
 btn.addEventListener("click",function(){
-  Add.push(el)
+ 
+  let already=false;
+  Add.map(el1=>{
+    if(el1["image-container href"]==el["image-container href"]){
+        already=true;
+    }
+  })
+  if(already){
+    alert('Product already in the bag')
+  }
+  else{
+    el.quantity=1;
+    Add.push(el)
   localStorage.setItem("Add",JSON.stringify(Add))
   console.log(Add)
+  alert("Product added successfully")
+  }
 })
 
   card.append(img,rating,tag,sym,price,des,col,btn);

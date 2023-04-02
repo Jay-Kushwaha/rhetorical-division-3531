@@ -1,4 +1,4 @@
-let cart = JSON.parse(localStorage.getItem("cartitem")) || [];
+let cart = JSON.parse(localStorage.getItem("Add")) || [];
 let loggedin = JSON.parse(localStorage.getItem("loggedin"))||""
 if(loggedin.length==0){
   location.href='/login_authentication/login.html'
@@ -110,7 +110,7 @@ function displaydata(cart) {
   increment.textContent = "+";
   increment.addEventListener("click", function () {
     el.quantity++;
-    localStorage.setItem("cartitem", JSON.stringify(cart))
+    localStorage.setItem("Add", JSON.stringify(cart))
     displaydata(cart)
     
   });
@@ -122,7 +122,7 @@ function displaydata(cart) {
   decrement.addEventListener("click", function () {
     if (el.quantity != 1) {
       el.quantity--;
-      localStorage.setItem("cartitem", JSON.stringify(cart))
+      localStorage.setItem("Add", JSON.stringify(cart))
       displaydata(cart)
       
     }
@@ -167,7 +167,7 @@ displaydata(cart);
 
 function removeitem(i) {
   cart.splice(i, 1);
-  localStorage.setItem("cartitem", JSON.stringify(cart));
+  localStorage.setItem("Add", JSON.stringify(cart));
   displaydata(cart);
 }
 
