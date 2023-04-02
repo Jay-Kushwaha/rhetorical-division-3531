@@ -60,6 +60,7 @@ createAccountForm.addEventListener("submit", e=>{
     }
 users.push(user)
     localStorage.setItem("users",JSON.stringify(users))
+    window.location.reload();
 
 })
 
