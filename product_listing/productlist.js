@@ -46,6 +46,8 @@ let fildata = document.getElementById("filter")
 let pricef = document.getElementById("price-range")
 
 data1 = JSON.parse(localStorage.getItem("nil"))||[];
+
+let Add = JSON.parse(localStorage.getItem("Add"))||[];
 let cont = document.getElementById("cont");
 function show(data){
     cont.innerHTML = null;
@@ -54,12 +56,17 @@ function show(data){
   let card = document.createElement("div");
   let img = document.createElement("img");
   let rating = document.createElement("p");
+  rating.setAttribute("class","c1")
   let tag = document.createElement("p");
 
   let sym = document.createElement("span");
   let price = document.createElement("span");
   let des = document.createElement("p");
    let col = document.createElement("p")
+  col.setAttribute("class","c1")
+
+  let btn = document.createElement("button");
+  btn.setAttribute("class","c2")
   img.src = el["tile-image src"]
   img.alt = "error"
   rating.innerText = el["sr-only"]
@@ -68,7 +75,15 @@ function show(data){
   price.innerText = el["price-currency-text"];
   des.innerText = el["link"]
 col.innerText =el["sr-only 5"]
-  card.append(img,rating,tag,sym,price,des,col);
+btn.innerText = "Add To Bag"
+
+btn.addEventListener("click",function(){
+  Add.push(el)
+  localStorage.setItem("Add",JSON.stringify(Add))
+  console.log(Add)
+})
+
+  card.append(img,rating,tag,sym,price,des,col,btn);
 
   cont.append(card)
     })
