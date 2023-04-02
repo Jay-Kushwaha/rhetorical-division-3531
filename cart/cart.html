@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cart</title>
   <link rel="stylesheet" href="cart.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/73b65dc76b.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -15,43 +19,11 @@
   <h1>Your Cart</h1>
   <div class="container-fluid">
     <div class="row align-items-start">
-      <div class="col-12 col-sm-8 items">
+      <div class="col-12 col-sm-8 items" id="items">
         <!--1-->
-        <div class="cartItem row align-items-start">
-          <div class="col-3 mb-2">
-            <img class="w-100" src="https://badux.co/smc/codepen/birdcage-posters.jpg" alt="art image">
-          </div>
-          <div class="col-5 mb-2">
-            <h6 class="">Dark Art 1</h6>
-            <p class="pl-1 mb-0">20 x 24</p>
-            <p class="pl-1 mb-0">Matte Print</p>
-          </div>
-          <div class="col-2 quantity">
-       <button id="increment">+</button>     <p class="cartItemQuantity p-1 text-center">1</p><button id="decrement">-</button>
-          </div>
-          <div class="col-2">
-            <p id="cartItem1Price">$66</p>
-          </div>
-        </div>
-        <hr>
+        
         <!--2-->
-        <div class="cartItem row align-items-start">
-          <div class="col-3 mb-2">
-            <img class="w-100" src="https://badux.co/smc/codepen/birdcage-posters.jpg" alt="art image">
-          </div>
-          <div class="col-5 mb-2">
-            <h6 class="">Dark Art 2</h6>
-            <p class="pl-1 mb-0">20 x 24</p>
-            <p class="pl-1 mb-0">Matte Print</p>
-          </div>
-         <div class="col-2 quantity">
-       <button id="increment">+</button>     <p class="cartItemQuantity p-1 text-center">1</p><button id="decrement">-</button>
-          </div>
-          <div class="col-2">
-            <p id="cartItem1Price">$66</p>
-          </div>
-        </div>
-        <hr>
+   
       </div>
       <div class="col-12 col-sm-4 p-3 proceed form">
         <div class="row m-0">
@@ -91,3 +63,4 @@
   
 </body>
 </html>
+<script src="cart.js"></script>
