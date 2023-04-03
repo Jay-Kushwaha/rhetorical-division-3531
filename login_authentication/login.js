@@ -40,15 +40,17 @@ let users = JSON.parse(localStorage.getItem("users"))||[];
         e.preventDefault();
         let name = document.getElementById("loginname").value;
         let pass = document.getElementById("loginpass").value;
+        let flag = false;
         users.map(el=>{
             if((el.name==name||el.email==name)&&el.password==pass){
                 localStorage.setItem("loggedin",JSON.stringify(el.name))
                 window.location.href=`/landing_page/index.html`
+                flag= true
             }
         })
-        
+        if(!flag){
         setFormMessage(loginForm, "error", "Invalid username/password combination");
-
+        }
     });
 createAccountForm.addEventListener("submit", e=>{
     e.preventDefault();
