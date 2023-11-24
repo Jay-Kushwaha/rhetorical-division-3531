@@ -14,7 +14,7 @@ This is a clone of an e-commerce website built using HTML, CSS, and JavaScript.<
 
 <br />
 
-### Demo Screeshots
+### Demo Screenshots
 
 ![Estelle Desktop Demo](/readme/demo.png "Desktop Demo")
 
