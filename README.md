@@ -8,7 +8,7 @@ This is a clone of an e-commerce website built using HTML, CSS, and JavaScript.<
 
 
 
-  <a href="https://codewithsadee.github.io/woodex/"><strong>➥ Live Demo</strong></a>
+  <a href="https://dreamy-cactus-59cabc.netlify.app/landing_page/index.html"><strong>➥ Live Demo</strong></a>
 
 </div>
 
